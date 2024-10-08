@@ -27,8 +27,6 @@
                         let trainInfo = `<p>Train Number: ${train.trainNum}, Route Name: ${train.routeName}, Train ID: ${train.trainID}
                             &nbsp;&nbsp;&nbsp;&nbsp;Last Stop: ${train.LastStop}, Arrival Time: ${train.Arrival}</p>`;
                         resultsDiv.innerHTML += trainInfo;
-                        // let ArrInfo = `<p>Last Stop: ${train.LastStop}, Arrival Time: ${train.Arrival}</p>`;
-                        // resultsDiv.innerHTML += ArrInfo;
                     });
                 }
             })
@@ -40,6 +38,9 @@
 </head>
 <body>
     <h1>Search Trains by Route Name</h1>
+    <h4>Popular routes include 'Empire Service' and 'Keystone'</h4>
+    <p>Until a list is implemented further into development, a full list of Amtrak lines can be found 
+        <a href="https://www.amtrak.com/train-routes" target="_blank">here</a></p>
     <form onsubmit="event.preventDefault(); searchTrains();">
         <label for="route_name">Route Name:</label>
         <input type="text" id="route_name" name="route_name" required>

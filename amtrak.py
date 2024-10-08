@@ -42,4 +42,5 @@ def search():
     return jsonify(filtered_trains)
 
 if __name__ == "__main__":
+    # app.run(host='0.0.0.0', port=5000)  # Or your desired port
     app.run(debug=True)
